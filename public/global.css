@@ -1,0 +1,80 @@
+:root {
+	--primary: #142850;
+	--secondary: #27496d;
+	--light-bg: #00a8cc;
+	--light-font: rgb(240, 239, 239);
+	--primary-font: black;
+	--light-boarder: white;
+	--dark-boarder: black;
+	--disabled: #999; 
+	--links: blue;
+	--visted: #0c7b93;
+	--warning: red;
+}
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	color: var(--primary-font);
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+a {
+	color: var(--link);
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: var(--visted);
+}
+
+label {
+	display: block;
+}
+
+input, button, select, textarea {
+	font-family: inherit;
+	font-size: inherit;
+	padding: 0.4em;
+	margin: 0 0 0.5em 0;
+	box-sizing: border-box;
+	border: 1px solid var(--light-boarder);
+	border-radius: 2px;
+}
+
+input:disabled {
+	color: var(--light-boarder);
+}
+
+input[type="range"] {
+	height: 0;
+}
+
+button {
+	color: var(--primary-font);
+	background-color: var(--light-bg);
+	outline: none;
+}
+
+button:disabled {
+	color: var(--disabled);
+}
+
+button:not(:disabled):active {
+	background-color: var(--light-bg);
+}
+
+button:focus {
+	border-color: var(--secondary);
+}
