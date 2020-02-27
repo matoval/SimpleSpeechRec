@@ -20,6 +20,7 @@ html, body {
 
 body {
 	color: var(--primary-font);
+	background-color: var(--disabled);
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;

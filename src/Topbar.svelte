@@ -30,8 +30,11 @@ window.addEventListener("resize", resizing);
 
 <main on:resize="{resizing}">
   <div class="topbar">
+    <div class="graphic">
+      <img class="HP-glasses" src="HP-glasses.svg" alt="glasses">
+    </div>
     <div class="logo">
-      <h1>LOGO</h1>
+      <h1 class="page-title">Cast a Spell</h1>
     </div>
     {#if !isMobile}
     <div class="nav">
@@ -69,9 +72,9 @@ window.addEventListener("resize", resizing);
     justify-content: space-between;
   }
 
-  .logo {
+  .page-title {
     padding: 5px;
-    margin-left: 20px;
+    margin: 0 auto;
     color: var(--light-font);
   }
 
@@ -90,10 +93,6 @@ window.addEventListener("resize", resizing);
     list-style: none;
     float: left;
     padding: 5px 15px;
-  }
-
-  h1 {
-    margin: 0;
   }
 
   .mobile-nav ul {
@@ -121,6 +120,15 @@ window.addEventListener("resize", resizing);
     color: var(--light-font);
     background-color: var(--secondary);
     margin: 5px;
+  }
+  .HP-glasses {
+    height: 15px;
+    width: auto;
+    margin: 25px 5px;
+  }
+
+  .graphic {
+    height: 60px;
   }
 
   @media only screen and (max-device-width: 600px) {
